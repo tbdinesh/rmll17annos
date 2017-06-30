@@ -1,0 +1,39 @@
+<!-- 
+ Source : https://en.wikipedia.org/wiki/Method_overriding
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+ <head>
+	<title>Overriding in Object Oriented Programming</title>
+	<style>body{font-family: calibri}</style>
+ </head>
+ <body>
+	<div align="center">
+		<div style="width:1200px;border-radius: 25px;background: #8AC007;padding: 10px;height=30px;">
+			<h1>Function Overriding</h1>
+		</div>
+		<br>
+		<div style="width:1200px;border-radius: 25px;border:2px solid #8AC007;padding: 10px;height=30px;" align="center">
+			<div align="left">
+				<p align="left">
+				In C++, the name of the parent or base class is used followed by the scope resolution operator to override functions. 
+				For example, the following code presents two classes, the base class TRectangle, and the derived class TBox. TBox overrides the 
+				TRectangle class's print() method, so as also to print its height.
+				</p>
+			</div>
+			<!-- 
+				
+			-->
+			<img src="./method_override_cpp.png" style="border:1px solid gray;">
+			<div align="center">
+				<p align="left">
+					The method print() in class TBox, by invoking the parent version of method print(), is also able to 
+					output the private variables length and width of the base class. Otherwise, these variables are inaccessible to TBox.
+					The following statements will instantiate objects of type TRectangle and TBox, and call their respective print() methods:
+				</p>
+				<img src="./method_override_cpp_result.png" style="border:1px solid gray;">
+			</div>
+		</div>
+	</div>
+ </body>
+</html>

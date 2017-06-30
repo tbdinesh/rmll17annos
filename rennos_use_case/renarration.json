@@ -1,0 +1,152 @@
+{
+  "_id": ObjectId("562a3418de680356ccce10fd"),
+  "context": "http://localhost:8181/renarration/ns/20151001.json",
+  "@id": "1cefb8ff-1674-483d-9bce-bb8001c5ec5a",
+  "@type": "rn:Renarration",
+  "renarratedAt": "2015-10-23T13:20:24.057Z",
+  "audience": [
+    "rn:JavaProgrammers"
+  ],
+  "source": {
+    "@id": "http://localhost:8181/renarration/resources/oop_overriding.html",
+    "@type": [
+      "foaf:Page",
+      "rn:Document"
+    ]
+  },
+  "transform": {
+    "@id": "cfa18fb7-d286-4bc7-9428-69770c1b8045",
+    "@type": "rn:List",
+    "nodes": [
+      {
+        "@id": "3cc9b52d-26db-4ccc-8450-0baec2435e99",
+        "@type": "rn:RenarrationTransformation",
+        "selection": {
+          "@id": "8acb814f-de05-44b4-8da6-7713fa11d5c5",
+          "@type": "rn:List",
+          "nodes": [
+            {
+              "@id": "e0c0956d-3914-4621-bf0e-76936d68f2fb",
+              "@type": "rn:XPathSelector",
+              "value": "#xpointer(//html[1]/body[1]/div[1]/div[1]/h1[1])"
+            },
+            {
+              "@id": "765a94b8-c003-4c41-af79-048047830137",
+              "@type": "rn:PrefixSuffixSelector",
+              "prefix": "",
+              "suffix": "",
+              "text": "Function"
+            }
+          ]
+        },
+        "createdAt": "2015-10-23T13:14:39.991Z",
+        "action": "rn:Replace",
+        "narration": {
+          "@id": "c41e9d39-2d09-442d-9ea1-018986c53801",
+          "@type": "cnt:ContentAsText",
+          "content": "Method",
+          "audience": [
+            
+          ]
+        }
+      },
+      {
+        "@id": "b1795475-abbb-481c-9775-b84bc567252d",
+        "@type": "rn:RenarrationTransformation",
+        " selection": {
+          "@id": "2f305684-d300-4493-88ce-217cfb836d49",
+          "@type": "rn:XPathSelector",
+          "value": "#xpointer(//html[1]/body[1]/div[1]/div[2]/div[1]/p[1])"
+        },
+        "createdAt": "2015-10-23T13:16:33.860Z",
+        "action": "rn:Replace",
+        "narration": {
+          "@id": "77d9f63f-a806-4e06-8022-66ff4fc1ffdd",
+          "@type": "rn:List",
+          "nodes": [
+            {
+              "@id": "1d127fc6-c8fa-4d71-8c80-eb015fb3ff0d",
+              "@type": "cnt:ContentAsText",
+              "content": "Method overriding, in object oriented programming, is a la nguage feature that allows a subclass or child class to provide a specific imple mentation of a method that is already provided by one of its superclasses or par ent classes. The implementation in the subclass overrides (replaces) the impleme ntation in the superclass by providing a method that has same name, same paramet ers or signature, and same return type as the method in the parent class. The ve rsion of a method that is executed will be determined by the object that is used  to invoke it. If an object of a parent class is used to invoke the method, then  the version in the parent class will be executed, but if an object of the subcl ass is used to invoke the method, then the version in the child class will be ex ecuted. Some languages allow a programmer to prevent a method from being overrid den.",
+              "audience": [
+                
+              ]
+            },
+            {
+              "@id": "373b7f0a-5c07-4d94-90b1-1fde08ee68a5",
+              "@type": "cnt:ContentAsText",
+              "content": "In Java, when a subclass contains a me thod that overrides a method of the superclass, it can also invoke the superclas s method by using the keyword super. Example:",
+              "audience": [
+                
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "@id": "a2703320-2128-4278-8660-a9b15a10e1ae",
+        "@type": "rn:RenarrationTransformation",
+        "selection": {
+          "@id": "b8531f38-b83a-49fc-bf0c-ee32de873559",
+          "@type": "rn:XPathSelector",
+          "value": "#xpointer(//html[1]/body[1]/div[1]/div[2]/img[1])"
+        },
+        "createdAt": "2015-10-23T13:17:31.964Z",
+        "action": "rn:Replace",
+        "narration": {
+          "@id": "http://localhost:8181/renarration/resources/method_override_java.png",
+          "@type": "dctypes:Image",
+          "format": ""
+        }
+      },
+      {
+        "@id": "c8334146-bc8b-42a2-99e5-6432cd9431f0",
+        "@type": "rn:RenarrationTransformation",
+        "selection": {
+          "@id": "c56ddc47-f401-4c72-860b-786209654ef9",
+          "@type": "rn:XPathSelector",
+          "value": "#xpointer(//html[1]/body[1]/div[1]/div[2]/div[2])"
+        },
+        "createdAt": "2015-10-23T13:19:21.112Z",
+        "action": "rn:Replace",
+        "narration": {
+          "@id": "0593f2bc-c843-494f-b11d-402fef1cd469",
+          "@type": "rn:List",
+          "nodes": [
+            {
+              "@id": "67b9b5c2-52e6-4a68-964c-ed1c173a5658",
+              "@type": "cnt:ContentAsText",
+              "content": " Class Thought represents the superclass and implements a method call message (). The subclass called Advice inherits every method that could be in the Though t class. However, class Advice overrides the method message(), replacing its fun ctionality from Thought.",
+              "audience": [
+                
+              ]
+            },
+            {
+              "@id": "e522a2fb-2872-424a-8949-ef1f7c2193bd",
+              "@type": "cnt:ContentAsText",
+              "content": " There are methods that a subclass cannot override. For example, in Java, a method that is declared  final in the super class cannot be overridden. Methods that are declared privat e or static cannot be overridden either because they are implicitly final. It is  also impossible for a class that is declared final to become a super class.",
+              "audience": [
+                
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "renarrator": {
+    "@id": "4f841294-b790-4fa9-8e9c-d082084d8441",
+    "@type": "foaf:Person",
+    "name": "Emrah Guder"
+  },
+  "motivation": [
+    "rn:alternative"
+  ],
+  "target": {
+    "@id": "http://localhost:8181/renarration/rn_target/suzan_emrah.html",
+    "@type": [
+      "foaf:Page",
+      "rn:Document"
+    ]
+  }
+}
